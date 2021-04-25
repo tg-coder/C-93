@@ -1,0 +1,23 @@
+body 
+{
+    background-color: #b6ddf0;
+}
+#kwitter_welcome
+{
+    font-size: 35px;
+}
+#user_name
+{
+    font-family: cursive;
+    height: 50px;
+    width: 310px;
+    font-size: 28px;
+   color: turquoise;
+}
+#login
+{
+    font-family: unset;
+    height: 45px;
+    width: 142px;
+    font-size: 24px;
+}
