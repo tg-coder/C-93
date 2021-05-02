@@ -5,6 +5,7 @@ body
 #kwitter_welcome
 {
     font-size: 35px;
+    font-family: cursive;
 }
 #user_name
 {
@@ -16,8 +17,34 @@ body
 }
 #login
 {
-    font-family: unset;
+    font-family: cursive;
     height: 45px;
     width: 142px;
     font-size: 24px;
+}
+#room_creator
+{
+    font-family: fantasy;
+    height: 60px;
+    width: 390px;
+    font-size: 28px;
+    color: teal;
+}
+#create_room
+{
+    font-family: fantasy;
+    height: 45px;
+    width: 200px;
+    font-size: 24px;
+    color:teal;
+    background-color: #ffb01c;
+    border-width: 2px;
+    border-color: #9bf542;
+}
+#logout
+{
+    font-family: fantasy;
+    font-size: 26px;
+    height: 45px;
+    width: 142px;
 }

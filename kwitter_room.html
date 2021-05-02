@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Let's Chat!</title>
+        <title>Let's Chat Rooms</title>
         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -12,26 +12,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="kwitter.css">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
-    </style>
-    <script src="kwitter.js"></script>
+<script src="kwitter_room.js">
+     var firebaseConfig = {
+    apiKey: "AIzaSyAtL31KDNddrL_P1Vyn2lpuQJk3_orC5Xw",
+    authDomain: "covid19chatbot--flkd.firebaseapp.com",
+    projectId: "covid19chatbot--flkd",
+    storageBucket: "covid19chatbot--flkd.appspot.com",
+    messagingSenderId: "956566785976",
+    appId: "1:956566785976:web:5939a0662e3c31a800494d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
     </head>
     <body>
-        <p id="kwitter_welcome">
-            <center>
-            <h1 style="color: deeppink;" class="header"> 
-                Let's Chat<sup>
-                    <img src="chat.png">
-                </sup></h1>
-            <h3 style="color: plum;"> A FREE online Chatting App. No login required! </h3>
-            <h4 style="color: green;">Join Us TODAY!</h4>
-            <input type="text" placeholder="Enter Username Here" id="user_name">
+        <center>
+        <p>
+            <button id="logout" class="btn btn-danger" onclick="logout()">Logout </button>
+            <h2>Make your own room and add people to communicate with them!</h2>
+            <img src="message.png">
+            <input type="text" id="room_creator" placeholder="Enter a room name of your choice"></input>
             <br>
             <br>
-            <button id="login" class="btn btn-primary" onclick="addUser()">Login!</button>
-            </center>
-            <h6> Let's Chat!</h6>
+            <button id="create_room" class="" onclick="addRoom()">Make the Room</button>
         </p>
+        </center>
     </body>
 </html>
